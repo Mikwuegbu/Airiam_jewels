@@ -7,6 +7,9 @@ import mobileCart from './mobileCart.svg';
 import mobileSearch from './mobileSearch.svg';
 import closeIcon from './close.png';
 import heroBg from './heroBg.png';
+import phoneIcon from './telePhone.svg';
+import emailicon from './emailIcon.svg';
+
 export {
 	logo,
 	search,
@@ -17,4 +20,6 @@ export {
 	menuOpen,
 	closeIcon,
 	heroBg,
+	phoneIcon,
+	emailicon,
 };
