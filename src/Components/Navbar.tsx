@@ -1,7 +1,6 @@
 import {
 	carticon,
 	closeIcon,
-	logo,
 	menuOpen,
 	mobileCart,
 	mobileSearch,
@@ -43,8 +42,12 @@ const Navbar = () => {
 					/>
 				</div>
 				<div className="flex space-x-7">
-					<img src={carticon} alt={carticon} className="h-6 w-6" />
-					<img src={user} alt={user} className="h-6 w-6" />
+					<button>
+						<img src={carticon} alt={carticon} className="h-6 w-6" />
+					</button>
+					<button>
+						<img src={user} alt={user} className="h-6 w-6" />
+					</button>
 				</div>
 			</div>
 			{/* mobile Navigation */}
