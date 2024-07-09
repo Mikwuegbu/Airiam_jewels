@@ -48,9 +48,13 @@ const Navbar = () => {
 				</div>
 			</div>
 			{/* mobile Navigation */}
-			<div className="flex lg:hidden justify-between items-center px-2 py-8 bg-[#FFF8E7]">
-				<div className="">
-					<img src={logo} alt={logo} className="w-[74px]" />
+			<div
+				className={`flex lg:hidden justify-between items-center px-2 py-8 ${
+					toggle ? 'bg-white' : 'bg-[#FFF8E7]'
+				} `}
+			>
+				<div className="font-MerriWeather font-bold text-base px-4">
+					<p>AIRIAM JEWELS</p>
 				</div>
 				<div className="flex gap-5 pr-4">
 					<button>
@@ -70,9 +74,10 @@ const Navbar = () => {
 						className={`${
 							toggle == false
 								? 'hidden'
-								: 'absolute top-28 left-0 right-0 mt-2 z-10 text-center space-y-4 font-MerriWeather font-normal bg-[#FFF8E7] h-screen'
+								: 'absolute top-20 left-0 right-0 mt-2 z-10 text-left px-6 space-y-4 font-MerriWeather font-normal bg-white py-0 pb-14'
 						}`}
 					>
+						{toggle && <hr className="border-b border-[#BABABA] mb-10" />}
 						<div>Home</div>
 						<div>Shop</div>
 						<div>About us</div>

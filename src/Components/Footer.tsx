@@ -66,7 +66,7 @@ const footerData: footerOptions[] = [
 
 const Footer = () => {
 	return (
-		<footer className="lg:flex grid justify-center gap-10 bg-[#FFF8E7] my-10 py-10 px-6">
+		<footer className="lg:flex grid justify-center gap-10 bg-[#FFF8E7] my-10 py-10 px-6 ">
 			<div className="">
 				<div>
 					<img src={logo} alt={logo} />
