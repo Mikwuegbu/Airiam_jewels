@@ -1,4 +1,4 @@
-import { emailicon, logo, phoneIcon } from '../assets/icons';
+import { emailicon, phoneIcon } from '../assets/icons';
 
 interface footerOptions {
 	id: number;
@@ -67,9 +67,11 @@ const footerData: footerOptions[] = [
 const Footer = () => {
 	return (
 		<footer className="lg:flex grid justify-center gap-10 bg-[#FFF8E7] mt-10 py-10 px-6 ">
-			<div className="">
+			<div className="flex flex-col gap-y-4 mt-12">
 				<div>
-					<img src={logo} alt={logo} />
+					<h2 className="pl-1.5 font-MerriWeather font-bold text-xl leading-normal">
+						AIRIAM JEWELS
+					</h2>
 				</div>
 				<div className="font-Raleway font-normal space-y-4">
 					<div className="flex space-x-2">
