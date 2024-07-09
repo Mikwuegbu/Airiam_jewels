@@ -22,9 +22,9 @@ const Navbar = () => {
 		<div className="overflow-hidden">
 			{/* Desktop Navigation */}
 			<div className="lg:flex hidden justify-between px-[100px] py-10 bg-[#FFF8E7] items-center">
-				<div className="w-[194px] h-[60px] px-2.5 py-4 flex-col justify-center items-start gap-2.5 inline-flex">
-					<img src={logo} alt={logo} className="self-stretch h-[133px]" />
-				</div>
+				<h1 className="font-MerriWeather font-bold text-xl leading-normal">
+					AIRIAM JEWELS
+				</h1>
 				<ul className="flex space-x-8 font-MerriWeather font-normal text-xl">
 					<li>Home</li>
 					<li>Shop</li>

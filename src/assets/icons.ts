@@ -9,6 +9,8 @@ import closeIcon from './close.png';
 import heroBg from './heroBg.png';
 import phoneIcon from './telePhone.svg';
 import emailicon from './emailIcon.svg';
+import filledStar from './filledStar.svg';
+import grayStar from './grayStar.svg';
 
 export {
 	logo,
@@ -22,4 +24,6 @@ export {
 	heroBg,
 	phoneIcon,
 	emailicon,
+	filledStar,
+	grayStar,
 };
