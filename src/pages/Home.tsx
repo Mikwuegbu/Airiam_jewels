@@ -26,7 +26,7 @@ const renderRating = (rating: number): JSX.Element[] => {
 const Home = () => {
 	return (
 		<div className="bg-[#FFF8E7]">
-			<div className="grid justify-center lg:justify-between place-items-center lg:text-left text-center px-6 lg:px-20 gap-y-3 lg:py-0 py-4 lg:grid-flow-col">
+			<div className="grid justify-center lg:justify-between place-items-center lg:text-left text-center px-6 lg:px-20 gap-y-3 lg:py-0 pt-4 lg:grid-flow-col">
 				<div className="space-y-3 lg:space-y-9 max-w-[624px]">
 					<h1 className="font-MerriWeather text-3xl lg:text-5xl font-bold text-nowrap lg:leading-[64px]">
 						Define your style
@@ -41,7 +41,6 @@ const Home = () => {
 						Shop Now
 					</button>
 				</div>
-
 				<img
 					src={heroBg}
 					alt={heroBg}
