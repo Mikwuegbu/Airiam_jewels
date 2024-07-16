@@ -26,9 +26,12 @@ const Navbar = () => {
 		<div className="overflow-hidden">
 			{/* Desktop Navigation */}
 			<div className="lg:flex hidden justify-between px-[100px] py-10 bg-[#FFF8E7] items-center">
-				<h1 className="font-MerriWeather font-bold text-xl leading-normal">
+				<Link
+					to="/"
+					className="font-MerriWeather font-bold text-xl leading-normal"
+				>
 					AIRIAM JEWELS
-				</h1>
+				</Link>
 				<ul className="flex space-x-8 font-MerriWeather font-normal text-xl">
 					<li>Home</li>
 					<li>Shop</li>
@@ -47,9 +50,10 @@ const Navbar = () => {
 					/>
 				</div>
 				<div className="flex space-x-7">
-					<button>
+					<Link to="cart" className="flex">
 						<img src={carticon} alt={carticon} className="h-6 w-6" />
-					</button>
+						&nbsp;{cartItemNum?.cartItems.length}
+					</Link>
 					<button>
 						<img src={user} alt={user} className="h-6 w-6" />
 					</button>
@@ -62,7 +66,7 @@ const Navbar = () => {
 				} `}
 			>
 				<div className="font-MerriWeather font-bold text-base px-4">
-					<p>AIRIAM JEWELS</p>
+					<Link to="/">AIRIAM JEWELS</Link>
 				</div>
 				<div className="flex gap-5 pr-4">
 					<button>

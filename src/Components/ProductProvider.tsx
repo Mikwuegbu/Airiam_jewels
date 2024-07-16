@@ -28,7 +28,10 @@ export const ProductContext = createContext<ProductContextType | undefined>(
 const CartReducer: Reducer<productType[], ProductAction> = (state, action) => {
 	switch (action.type) {
 		case 'ADD_TO_CART':
-			return [...state, action.payload];
+			return state.some((item) => item.id === action.payload.id)
+				? state
+				: [...state, action.payload];
+
 		case 'REMOVE_FROM_CART':
 			return state.filter((product) => product.id !== action.payload);
 		default:
