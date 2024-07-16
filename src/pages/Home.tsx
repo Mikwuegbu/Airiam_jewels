@@ -1,6 +1,8 @@
+import { useContext } from 'react';
 import { heroBg } from '../assets/icons';
-import data from '../data.json';
 import { filledStar, grayStar } from '../assets/icons';
+import data from '../data.json';
+import { ProductContext } from '../Components/ProductProvider';
 
 //rating icons
 const renderRating = (rating: number): JSX.Element[] => {
@@ -24,6 +26,9 @@ const renderRating = (rating: number): JSX.Element[] => {
 };
 
 const Home = () => {
+	const cartSelections = useContext(ProductContext);
+	const dispatch = cartSelections?.dispatch;
+
 	return (
 		<div className="bg-[#FFF8E7]">
 			<div className="grid justify-center lg:justify-between place-items-center lg:text-left text-center px-6 lg:px-20 gap-y-3 lg:py-0 pt-4 lg:grid-flow-col">
@@ -67,7 +72,13 @@ const Home = () => {
 								<p className="font-MerriWeather font-medium text-3xl">
 									${product.price.toFixed(2)}
 								</p>
-								<button className="flex font-Raleway text-2xl font-medium text-white justify-center bg-[#C99A9A] py-2.5 px-1 rounded-lg mt-2">
+								<button
+									type="button"
+									onClick={() =>
+										dispatch!({ type: 'ADD_TO_CART', payload: product })
+									}
+									className="active:bg-[#b48e8e] flex font-Raleway text-2xl font-medium text-white justify-center bg-[#C99A9A] py-2.5 px-1 rounded-lg mt-2"
+								>
 									Add to cart
 								</button>
 							</div>

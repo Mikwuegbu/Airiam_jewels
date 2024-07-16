@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
 	carticon,
 	closeIcon,
@@ -7,7 +8,8 @@ import {
 	search,
 	user,
 } from '../assets/icons';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { ProductContext } from './ProductProvider';
 
 const Navbar = () => {
 	const [toggle, settoggle] = useState<boolean>(false);
@@ -16,6 +18,9 @@ const Navbar = () => {
 		settoggle(!toggle);
 		return toggle;
 	};
+
+	const cartItemNum = useContext(ProductContext);
+	const selectedItemsNo = cartItemNum?.cartItems;
 
 	return (
 		<div className="overflow-hidden">
@@ -63,9 +68,10 @@ const Navbar = () => {
 					<button>
 						<img src={mobileSearch} alt={mobileSearch} />
 					</button>
-					<button>
+					<Link to="cart" className="flex">
 						<img src={mobileCart} alt={mobileCart} />
-					</button>
+						&nbsp;{selectedItemsNo?.length}
+					</Link>
 					<button onClick={toggleMenu} className="">
 						<img
 							src={!toggle ? menuOpen : closeIcon}
