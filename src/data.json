@@ -1,67 +1,67 @@
 {
-	"products": [
-		{
-			"id": 1,
-			"name": "Lush Bracelet",
-			"image": "images/lushBracelet.png",
-			"price": 85.0,
-			"rating": 4
-		},
-		{
-			"id": 2,
-			"name": "L'Hal Necklace",
-			"image": "images/lHalNecklace.png",
-			"price": 60.99,
-			"rating": 5
-		},
-		{
-			"id": 3,
-			"name": "Love earrings",
-			"image": "images/loveEarrings.png",
-			"price": 50.08,
-			"rating": 4
-		},
-		{
-			"id": 4,
-			"name": "Frida Crust Ring",
-			"image": "images/fridaCrustRing.png",
-			"price": 110.25,
-			"rating": 5
-		},
-		{
-			"id": 5,
-			"name": "Pendant de Bu",
-			"image": "images/pendantDeBu.png",
-			"price": 60.99,
-			"rating": 3
-		},
-		{
-			"id": 6,
-			"name": "Su Black Bracelet",
-			"image": "images/sluBlackBracelet.png",
-			"price": 120.45,
-			"rating": 4
-		},
-		{
-			"id": 7,
-			"name": "Opal Bracelet",
-			"image": "images/opalBracelet.png",
-			"price": 90.32,
-			"rating": 5
-		},
-		{
-			"id": 8,
-			"name": "Silver Necklace",
-			"image": "images/silverNecklace.png",
-			"price": 70.05,
-			"rating": 4
-		},
-		{
-			"id": 9,
-			"name": "Love earrings",
-			"image": "images/loversEarrings.png",
-			"price": 100.25,
-			"rating": 5
-		}
-	]
+  "products": [
+    {
+      "id": 1,
+      "name": "Lush Bracelet",
+      "image": "images/lushBracelet.png",
+      "price": 85.0,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "L'Hal Necklace",
+      "image": "images/lHalNecklace.png",
+      "price": 60.99,
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Love earrings",
+      "image": "images/loveEarrings.png",
+      "price": 50.08,
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "name": "Frida Crust Ring",
+      "image": "images/fridaCrustRing.png",
+      "price": 110.25,
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Pendant de Bu",
+      "image": "images/pendantDeBu.png",
+      "price": 60.99,
+      "rating": 3
+    },
+    {
+      "id": 6,
+      "name": "Su Black Bracelet",
+      "image": "images/sluBlackBracelet.png",
+      "price": 120.45,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "name": "Opal Bracelet",
+      "image": "images/opalBracelet.png",
+      "price": 90.32,
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "name": "Silver Necklace",
+      "image": "images/silverNecklace.png",
+      "price": 70.05,
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "name": "Love earrings",
+      "image": "images/loversEarrings.png",
+      "price": 100.25,
+      "rating": 5
+    }
+  ]
 }
